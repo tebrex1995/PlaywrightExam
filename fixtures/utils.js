@@ -9,4 +9,8 @@ function generateRandomString(length) {
   return result;
 }
 
-export { generateRandomString };
+function generateRandomNumber() {
+  return Math.floor(Math.random() * 90000000) + 10000000;
+}
+
+export { generateRandomString, generateRandomNumber };
