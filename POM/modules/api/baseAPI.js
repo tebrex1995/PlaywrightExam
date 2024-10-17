@@ -3,7 +3,7 @@ export class BaseAPI {
     this.page = page;
     this.token = token;
   }
-  async post(endpoint, payload) {
+  async post(endpoint, payload = '') {
     const response = await this.page.request.post(endpoint, {
       headers: this.getHeaders(),
       data: payload,

@@ -68,6 +68,7 @@ test.describe('Register user successfully', () => {
     const token = await loginResponse.auth.token;
     const customersApi = new CustomersAPI(page, token);
     const response = await customersApi.updateShippingInfo(id, UPDATE_INFO);
+    console.log(await response);
     await expect(true).toBe(true);
   });
 });
