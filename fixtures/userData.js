@@ -1,7 +1,7 @@
 import { generateRandomString } from './utils';
 
 export const EXISTING_USER = {
-  username: 'aleksatester@gmail.com',
+  email: 'aleksatester@gmail.com',
   password: 'test123',
 };
 
